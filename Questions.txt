@@ -1,0 +1,46 @@
+1.What is PostgreSQL?
+
+ANS:PostgreSQL is an open-source relational database management system. It allows us to store and manage data in a structured way. We use tables to store data . And it provides many powerful tools for querying, updating, and handling data securely.
+
+2.What is the purpose of a database schema in PostgreSQL?
+
+Ans:A schema is like a folder within a database that helps us to  organize tables, views, and other database objects. It allows us to structure data logically and separate different parts of a database. Which helps us to manage large projects or multiple users easily.
+
+3.Explain the primary key and foreign key concepts in PostgreSQL.
+
+ANS:A primary key is a unique identifier for a record in a table. It ensures that no two rows have the same primary key value it will throw error if we try to insert a data with same id . A foreign key is a link between two tables. It references the primary key of another table it creates a relationship between data in different tables.
+
+4.What is the difference between the VARCHAR and CHAR data types?
+
+ANS:Both VARCHAR and CHAR store text. But CHAR has a fixed length so it always takes up the same space.Whereas VARCHAR has a variable length and only uses as much space as needed. VARCHAR is more flexible, while CHAR is best for fields with a set length. we can set length of VARCHAR like VARCHAR(50) it will take only 50 charecters.
+
+5.Explain the purpose of the WHERE clause in a SELECT statement.
+
+ANS:The WHERE clause filters records based on a condition, so only rows that meet certain criteria are returned in a query. For example, if we want  to retrieve only students above a certain age. so we can write (select student_name from students where age > 18) so it will give us students list avobe 18.
+
+6.What are the LIMIT and OFFSET clauses used for?
+
+ANS:LIMIT specifies the number of rows to return. While OFFSET skips a number of rows before starting to return data. Together they are useful for pagination such as displaying records 10 at a time on a website. suppose we want to see 10 students starting from 11-20 so can offset 10 and limit 10.
+
+7.How can you perform data modification using UPDATE statements?
+
+ANS:The UPDATE statement changes existing records in a table. we specify the table and set new values for one or more columns. We can  use WHERE to define which rows to update. Without WHERE, all rows would be updated in a table.
+
+8.What is the significance of the JOIN operation, and how does it work in PostgreSQL?
+
+ANS: JOIN allows us to combine rows from two or more tables based on related columns. It is essential for retrieving data that is spread across multiple tables such as showing student names along with their course details. 
+
+9.Explain the GROUP BY clause and its role in aggregation operations.
+
+ANS:GROUP BY groups rows with the same values in specified columns and allows us to apply aggregate functions like COUNT, SUM, or AVG to each group. For example, if we want to count the number of students in each course we can use group BY or we can also group by gender or anything we want.
+
+10.How can you calculate aggregate functions like COUNT, SUM, and AVG in PostgreSQL?
+
+ANS:Aggregate functions perform calculations on a set of values. COUNT counts rows, SUM adds values and AVG calculates the average. These are used with GROUP BY for grouped data or without it to calculate across all rows.
+
+
+
+
+
+
+
